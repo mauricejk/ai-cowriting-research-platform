@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "When using this platform in your research, kindly cite it as follows:"
+title: "AI-CRP: An AI-Cowriting Research Platform"
 authors:
 - family-names: "Jakesch"
   given-names: "Maurice"
@@ -13,8 +13,7 @@ authors:
   given-names: "Lior"
 - family-names: "Naaman"
   given-names: "Mor"
-title: "AI-CRP: An AI-Cowriting Research Platform for Studies of Writers' Interactions with Large Language Models"
 version: 1.0.0
-doi: https://github.com/mauricejk/ai_cowriting_platform
+doi: 10.5281/zenodo.13149126
 date-released: 2024-08-01
 url: "https://github.com/mauricejk/ai_cowriting_platform"
