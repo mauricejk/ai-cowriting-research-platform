@@ -1,0 +1,21 @@
+<iframe src="https://<YOUR URL>/index.html?rid=qualtrics-${e://Field/ResponseID}&group=${e://Field/group}" style="width:100%;height:1000px;" frameBorder="0">Browser not compatible.</iframe>
+
+  <script>
+    // Listen for the study sending data
+    window.addEventListener('message', (event) => {
+      console.log('Message received:', event);
+      if(event.data.event_id=="submit"){
+          console.log('Received data:', event.data);
+          Qualtrics.SurveyEngine.setEmbeddedData('essay', event.data.formatted_essay);
+          Qualtrics.SurveyEngine.setEmbeddedData('accepted_suggestions', event.data.accepted_suggestions);
+          Qualtrics.SurveyEngine.setEmbeddedData('requested_suggestions', event.data.requested_suggestions);
+          Qualtrics.SurveyEngine.setEmbeddedData('suggestions_visible_time', event.data.suggestions_visible_time);
+          document.getElementById('NextButton').click();
+      }
+    })
+  </script>
+
+  <style>
+  #PreviousButton, #NextButton, #Buttons, #Footer, #PushStickyFooter {display: none;}
+  .Skin .SkinInner, .Skin #ProgressBar, .Skin .QuestionText {width: 100%; max-width: 100%; margin: 0; padding: 0; }
+  </style>

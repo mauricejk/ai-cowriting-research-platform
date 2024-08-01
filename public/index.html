@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>Writing task</title>
+    <link rel="stylesheet" href="./resources/styles.css" />
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+</head>
+
+<body class="app" data-editable="true">
+    <header>
+        <!-- HEADER -->
+        <div class="header" data-page-editable="true">
+            <div class="subtitle" id="subtitle">
+                <h4>
+                  Write <b>five or more </b> sentences carefully answering the
+                  question below. When done <b>press the button 'Finish' in the editor or on the right.</b>
+               </h4>
+            </div>
+            <!-- TOP MENU -->
+            <div class="toolbar">
+                <div class="toolbar-el trigger-1">
+                    <a id="trigger_word" href="#" class="js-trigger">
+                        <img src="./resources/svg/iconmonstr-download-14.svg" />Accept next word from the suggestion
+                    </a>&nbsp;or&nbsp;<kbd>TAB</kbd>
+                </div>
+                <div id="trigger_reset" class="toolbar-el trigger-2">
+                    <a href="#" class="js-shuffle">
+                        <img src="./resources/svg/iconmonstr-media-control-55.svg" />Generate new suggestion
+                    </a>&nbsp;or&nbsp;<kbd>ESCAPE</kbd>
+                </div>
+            </div>
+            <!-- RIGHT MENU -->
+            <div class="rightbar">
+                <button id="submit_button_top" type="button_top">
+                    Save and Finish
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="page-wrapper">
+        <div class="page-container">
+            <div class="flex border border-grey-light-alt hover:border-grey rounded bg-white cursor-pointer">
+                <div class="w-1/12 flex flex-col text-center pt-2 side">
+                    <div class="text-xs">
+                        <svg class="w-5 fill-current text-grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                            <path d="M7 10v8h6v-8h5l-8-8-8 8h5z"></path>
+                        </svg>
+                    </div>
+                    <span class="text-xs font-semibold my-1" style="margin-top: 0">78</span
+                     >
+                  <div class="text-xs">
+                     <svg
+                        class="w-5 fill-current text-grey"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        >
+                        <path d="M7 10V2h6v8h5l-8 8-8-8h5z"></path>
+                     </svg>
+                  </div>
+               </div>
+               <div class="w-11/12 pt-2">
+                  <div class="flex items-center text-xs mb-2">
+                     <a
+                        href="#"
+                        class="font-semibold no-underline hover:underline text-black flex items-center"
+                        >
+                     <img
+                        class="rounded-full border h-5 w-5"
+                        src="https://avatars0.githubusercontent.com/u/30317862?s=200&amp;v=4"
+                        />
+                     <span class="ml-2">r/discussion</span>
+                    </a>
+                    <span class="text-grey-light mx-1 text-xxs">•</span>
+                    <span class="text-grey">Posted by</span>
+                    <a href="#" class="text-grey mx-1 no-underline hover:underline">u/cody_sunny</a
+                        >
+                     <span class="text-grey">2 hours ago</span>
+                  </div>
+                  <div style="margin-bottom: 10px">
+                     <h2 class="text-lg font-medium mb-1" style="margin-top: 10px">
+                        Should standardized tests be used in education in America?
+                     </h2>
+                     Standardized tests have often been used in education for
+                     evaluation of progress and for admissions. But should standardized
+                     tests be used in education in America? I am having a hard time
+                     making up my mind. What do you think?
+                  </div>
+                  <div class="inline-flex items-center my-1">
+                     <div class="flex hover:bıg-grey-lighter p-1">
+                        <svg
+                           class="w-4 fill-current text-grey"
+                           xmlns="http://www.w3.org/2000/svg"
+                           viewBox="0 0 20 20"
+                           >
+                           <path
+                              d="M10 15l-4 4v-4H2a2 2 0 0 1-2-2V3c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-8zM5 7v2h2V7H5zm4 0v2h2V7H9zm4 0v2h2V7h-2z"
+                              ></path>
+                        </svg>
+                        <span class="ml-2 text-xs font-semibold text-grey"
+                           >131 Comments</span
+                           >
+                     </div>
+                     <div class="flex hover:bg-grey-lighter p-1 ml-2">
+                        <svg
+                           class="w-4 fill-current text-grey"
+                           xmlns="http://www.w3.org/2000/svg"
+                           viewBox="0 0 20 20"
+                           >
+                           <path
+                              d="M5.08 12.16A2.99 2.99 0 0 1 0 10a3 3 0 0 1 5.08-2.16l8.94-4.47a3 3 0 1 1 .9 1.79L5.98 9.63a3.03 3.03 0 0 1 0 .74l8.94 4.47A2.99 2.99 0 0 1 20 17a3 3 0 1 1-5.98-.37l-8.94-4.47z"
+                              ></path>
+                        </svg>
+                        <span class="ml-2 text-xs font-semibold text-grey">Share</span>
+                     </div>
+                     <div class="flex hover:bg-grey-lighter p-1 ml-2">
+                        <svg
+                           class="w-4 fill-current text-grey"
+                           xmlns="http://www.w3.org/2000/svg"
+                           viewBox="0 0 20 20"
+                           >
+                           <path
+                              d="M0 2C0 .9.9 0 2 0h14l4 4v14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5 0v6h10V2H5zm6 1h3v4h-3V3z"
+                              ></path>
+                        </svg>
+                        <span class="ml-2 text-xs font-semibold text-grey">Save</span>
+                     </div>
+                     <div class="flex hover:bg-grey-lighter p-1 ml-2 rotate-90">
+                        <svg
+                           class="w-4 fill-current text-grey"
+                           xmlns="http://www.w3.org/2000/svg"
+                           viewBox="0 0 20 20"
+                           >
+                           <path
+                              d="M10 12a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-6a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 12a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                              ></path>
+                        </svg>
+                     </div>
+                     <div class="flex hover:bg-grey-lighter p-1 ml-2">
+                        <svg
+                           class="w-4 fill-current text-grey"
+                           xmlns="http://www.w3.org/2000/svg"
+                           viewBox="0 0 20 20"
+                           >
+                           <img
+                              id="loader"
+                              class="js-loader"
+                              src="./resources/svg/tail-spin.svg"
+                              />
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="grid-container">
+                     <!-- EDITOR -->
+                     <div id="editor-writer" class="writer editor ql-editor"></div>
+                     <div
+                        id="editor-suggestions"
+                        class="suggestion editor ql-editor"
+                        ></div>
+                     <!-- EDITOR TOOLBAR -->
+                     <div class="ql-toolbar"></div>
+                     <div class="grid-button">
+                        <button id="submit_button_bottom" type="button">
+                        Save and Finish
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="w-1/12 flex flex-col text-center pt-2 side">
+                  <div class="text-xs"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- SCRIPTS -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+         // Read parameters from URL
+         var url = new URL(window.location);
+         var studyName = "study_name";
+         var participantID = url.searchParams.get("rid");
+         if (participantID == null) {
+           participantID = "local-" + Math.random().toString(36).substring(7);
+         }
+
+         var participantGroup = url.searchParams.get("group");
+         if (participantGroup == null) {
+             participantGroup = "pro";
+         }
+         if (participantGroup.includes("control")) {
+           $("#loader").hide();
+           $(".toolbar").hide();
+         } else {
+           $("#subtitle").append(
+             "A writing assistant will provide suggestions, but please also write yourself. To accept suggestions press TAB ."
+           );
+         }
+
+         // Initialize new session with parameters for assistant.js
+         console.log("New session:", url);
+         console.log("User:", participantID, participantGroup);
+
+         var editorInitialText = "In my view, ";
+         var generationTemperature = 0.85;
+
+         var systemPrompts = {
+           contra:
+           "You are auto-complete system. Come up with a continuation to the input text while arguing for why standardized tests are a bad way of evaluating student performance and should not be used in the American education system.\n- Only respond with the continuation, not the input text. \n- Complete the current sentence. If the current sentence is complete, add another sentence. \n- The continuations should be aligned to an anti-standardized tests position as much as possible. \n- Do not engage in conversation or reply to the arguments made in the input text as a chatbot, strictly behave as an auto-complete system and only generate continuations to the input text. \n- Respond with '*****' if you are unable to respond to the input text as an auto-complete system.",
+           pro:
+           "You are auto-complete system. Come up with a continuation to the input text while arguing for why standardized tests are a good way of evaluating student performance and should be used in the American education system.\n- Only respond with the continuation, not the input text. \n- Complete the current sentence. If the current sentence is complete, add another sentence. \n- The continuations should be aligned to a pro-standardized tests position as much as possible. \n- Do not   engage in conversation or reply to the arguments made in the input text as a chatbot, strictly behave as an auto-complete system and only generate continuations to the input text. \n- Respond with '*****' if you are unable to respond to the input text as an auto-complete system.",
+           // control: No suggestions
+         };
+         var systemPrompt = systemPrompts[participantGroup];
+      </script>
+
+      <script src="./resources/assistant.js"></script>
+   </body>
+</html>
